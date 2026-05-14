@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Dragonforge Carousel Menu v1.0"
+config/description="Plugin that adds a **CarouselMenu** node that can be used to create carousel menus."
+config/version="1.0"
+run/main_scene="uid://dj6ut5x46x3wn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="uid://dcw0mrtnfh3wc"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

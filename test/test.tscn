@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://dj6ut5x46x3wn"]
+
+[ext_resource type="Script" uid="uid://3rerxsv0cpoh" path="res://addons/dragonforge_carousel_menu/carousel_menu.gd" id="1_syuel"]
+[ext_resource type="FontFile" uid="uid://fwl4nodrw2k5" path="res://assets/sci_fi/fonts/Kenney Future.ttf" id="2_76tuw"]
+[ext_resource type="Texture2D" uid="uid://co7sh6x03bxps" path="res://assets/main/textures/ui/3.png" id="2_aeque"]
+[ext_resource type="Texture2D" uid="uid://cdwigpi1krdr1" path="res://assets/main/textures/ui/glassPanel_corners.png" id="3_f6u32"]
+[ext_resource type="Script" uid="uid://dn12qvjbqoby" path="res://test/load_scene_button.gd" id="3_kgdm3"]
+[ext_resource type="AudioStream" uid="uid://civfop816ijs5" path="res://assets/main/sound/music/UpbeatCalm1.mp3" id="5_kgdm3"]
+[ext_resource type="Texture2D" uid="uid://cst4qhxs0l0ix" path="res://assets/main/textures/ui/11.png" id="6_5jhup"]
+[ext_resource type="FontFile" uid="uid://b76ol0sj4nbvt" path="res://assets/main/fonts/Kenney Blocks.ttf" id="6_s3n3v"]
+[ext_resource type="FontFile" uid="uid://3mggxbs5smcf" path="res://assets/fantasy/fonts/MagicSchoolTwo.ttf" id="6_v2t6q"]
+[ext_resource type="FontFile" uid="uid://ce1gtxqge5so" path="res://assets/main/fonts/finalf.ttf" id="8_ibfm0"]
+[ext_resource type="Texture2D" uid="uid://c312gwtdgpphn" path="res://assets/main/textures/ui/banner_hanging.png" id="8_vvaop"]
+[ext_resource type="FontFile" uid="uid://deahcsq3mckoe" path="res://assets/credits/fonts/american_captain/American Captain.ttf" id="8_yj84r"]
+[ext_resource type="Texture2D" uid="uid://csoirfru0cgl4" path="res://assets/main/textures/ui/SPR_HUD_Arrow.png" id="9_76tuw"]
+[ext_resource type="Texture2D" uid="uid://cm2vqoe6rojtx" path="res://assets/main/textures/ui/chat.png" id="9_joax2"]
+[ext_resource type="Script" uid="uid://cjcixkn8w8wk8" path="res://test/quit_button.gd" id="10_yj84r"]
+[ext_resource type="Script" uid="uid://pdqpb631fguq" path="res://character_selection_test/rotate_audio_stream_player.gd" id="12_kr6cc"]
+[ext_resource type="AudioStream" uid="uid://dyxhuj7rh7hsh" path="res://assets/main/sound/sfx/Light Click A.wav" id="13_258bh"]
+[ext_resource type="AudioStream" uid="uid://s1vgeh23l6ir" path="res://assets/main/sound/sfx/Light Click B.wav" id="14_yj84r"]
+[ext_resource type="AudioStream" uid="uid://deltni45b8l0q" path="res://assets/main/sound/sfx/Light Start.wav" id="15_76tuw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aeque"]
+texture = ExtResource("3_f6u32")
+texture_margin_left = 15.0
+texture_margin_top = 15.0
+texture_margin_right = 15.0
+texture_margin_bottom = 15.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v2t6q"]
+load_path = "res://.godot/imported/panel_brown_dark_corners_b.png-c61ea528b6b1be36e9ce25eaae923723.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vvaop"]
+texture = SubResource("CompressedTexture2D_v2t6q")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m3s2k"]
+texture = ExtResource("9_76tuw")
+texture_margin_left = 80.0
+texture_margin_top = 48.0
+texture_margin_right = 80.0
+texture_margin_bottom = 96.0
+region_rect = Rect2(0, 0, 256, 256)
+modulate_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hictm"]
+texture = ExtResource("9_joax2")
+texture_margin_left = 24.0
+texture_margin_top = 20.0
+texture_margin_right = 22.0
+texture_margin_bottom = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ibfm0"]
+texture = ExtResource("8_vvaop")
+texture_margin_left = 20.0
+texture_margin_top = 25.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_kgdm3"]
+font = ExtResource("6_s3n3v")
+font_size = 32
+
+[node name="Test" type="Control" unique_id=2053112227]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=543488415]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.015686275, 0, 0.24705882, 1)
+
+[node name="CarouselMenu" type="Control" parent="." unique_id=1378395919]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_syuel")
+radius = Vector2(280, -120)
+metadata/_custom_type_script = "uid://3rerxsv0cpoh"
+
+[node name="SciFiButton" type="Button" parent="CarouselMenu" unique_id=1924276115]
+z_index = 100
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 0
+offset_left = 486.0
+offset_top = 393.0
+offset_right = 666.0
+offset_bottom = 495.0
+scale = Vector2(1.35, 1.35)
+pivot_offset = Vector2(90, 51)
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_76tuw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_aeque")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_aeque")
+text = "Sci
+Fi"
+icon = ExtResource("2_aeque")
+alignment = 2
+expand_icon = true
+script = ExtResource("3_kgdm3")
+scene_to_load = "res://sci_fi_test/sci_fi_test.tscn"
+
+[node name="FantasyButton" type="Button" parent="CarouselMenu" unique_id=1861790671]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+custom_minimum_size = Vector2(240, 100)
+layout_mode = 0
+offset_left = 722.29584
+offset_top = 302.08203
+offset_right = 962.29584
+offset_bottom = 420.08203
+rotation = -0.13279255
+scale = Vector2(1.108156, 1.108156)
+pivot_offset = Vector2(120, 59)
+focus_mode = 0
+theme_override_fonts/font = ExtResource("6_v2t6q")
+theme_override_font_sizes/font_size = 52
+theme_override_styles/normal = SubResource("StyleBoxTexture_vvaop")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_vvaop")
+disabled = true
+text = "Fantasy"
+icon = ExtResource("6_5jhup")
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("3_kgdm3")
+scene_to_load = "res://fantasy_test/fantasy_test.tscn"
+
+[node name="QuitButton" type="Button" parent="CarouselMenu" unique_id=1295380538]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 626.07983
+offset_top = 130.91797
+offset_right = 855.07983
+offset_bottom = 322.91797
+rotation = -0.082070306
+scale = Vector2(0.716844, 0.716844)
+pivot_offset = Vector2(114.5, 96)
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("8_yj84r")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_m3s2k")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_m3s2k")
+disabled = true
+text = "Quit"
+script = ExtResource("10_yj84r")
+
+[node name="CreditsButton" type="Button" parent="CarouselMenu" unique_id=1112031776]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 304.42014
+offset_top = 177.91797
+offset_right = 518.42017
+offset_bottom = 275.91797
+rotation = 0.082070306
+scale = Vector2(0.716844, 0.716844)
+pivot_offset = Vector2(107, 49)
+focus_mode = 0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.41960785, 0.5137255, 0.7372549, 1)
+theme_override_colors/font_pressed_color = Color(0.41960785, 0.5137255, 0.7372549, 1)
+theme_override_colors/font_hover_color = Color(0.41960785, 0.5137255, 0.7372549, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.41960785, 0.5137255, 0.7372549, 1)
+theme_override_colors/font_disabled_color = Color(0.41960785, 0.5137255, 0.7372549, 1)
+theme_override_colors/font_outline_color = Color(0, 0.5372549, 0.75686276, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("6_s3n3v")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_hictm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hictm")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hictm")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_hictm")
+theme_override_styles/focus = SubResource("StyleBoxTexture_hictm")
+disabled = true
+text = "Credits"
+script = ExtResource("3_kgdm3")
+scene_to_load = "res://test_credits/credits.tscn"
+
+[node name="CharacterSelectButton" type="Button" parent="CarouselMenu" unique_id=1841232759]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = 217.20416
+offset_top = 288.58203
+offset_right = 402.20416
+offset_bottom = 433.58203
+rotation = 0.13279255
+scale = Vector2(1.108156, 1.108156)
+pivot_offset = Vector2(92.5, 72.5)
+focus_mode = 0
+theme_override_fonts/font = ExtResource("8_ibfm0")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxTexture_ibfm0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ibfm0")
+disabled = true
+text = "CHARACTER
+SELECT"
+script = ExtResource("3_kgdm3")
+scene_to_load = "res://character_selection_test/character_selection_test.tscn"
+
+[node name="Label" type="Label" parent="." unique_id=1809475812]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -24.0
+offset_right = 109.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Main Menu"
+label_settings = SubResource("LabelSettings_kgdm3")
+
+[node name="RotateAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=10744190]
+script = ExtResource("12_kr6cc")
+spin_right_sound = ExtResource("13_258bh")
+spin_left_sound = ExtResource("14_yj84r")
+select_sound = ExtResource("15_76tuw")
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=464584817]
+stream = ExtResource("5_kgdm3")
+volume_db = -10.0
+autoplay = true

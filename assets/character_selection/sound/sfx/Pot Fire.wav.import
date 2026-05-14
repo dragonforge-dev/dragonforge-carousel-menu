@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://sq58lmsicav3"
+path="res://.godot/imported/Pot Fire.wav-13dcc673ab3da2d74d6377f34208267f.sample"
+
+[deps]
+
+source_file="res://assets/character_selection/sound/sfx/Pot Fire.wav"
+dest_files=["res://.godot/imported/Pot Fire.wav-13dcc673ab3da2d74d6377f34208267f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

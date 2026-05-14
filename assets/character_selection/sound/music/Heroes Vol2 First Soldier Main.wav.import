@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lup0fwwpsvsn"
+path="res://.godot/imported/Heroes Vol2 First Soldier Main.wav-ddd86442affe6ef931a945d8056fc8fc.sample"
+
+[deps]
+
+source_file="res://assets/character_selection/sound/music/Heroes Vol2 First Soldier Main.wav"
+dest_files=["res://.godot/imported/Heroes Vol2 First Soldier Main.wav-ddd86442affe6ef931a945d8056fc8fc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

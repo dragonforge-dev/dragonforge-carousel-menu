@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cme10pbq2rbdr"
+path="res://.godot/imported/17. The Long Jump (Loop).ogg-ff34ff82de0189f48b87415740505d2b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sci_fi/sound/music/17. The Long Jump (Loop).ogg"
+dest_files=["res://.godot/imported/17. The Long Jump (Loop).ogg-ff34ff82de0189f48b87415740505d2b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

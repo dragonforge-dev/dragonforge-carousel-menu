@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dieao5nbjj122"
+path="res://.godot/imported/Bow Arrow Fire A.wav-17c72e93915208f014fe6e4130db5406.sample"
+
+[deps]
+
+source_file="res://assets/character_selection/sound/sfx/Bow Arrow Fire A.wav"
+dest_files=["res://.godot/imported/Bow Arrow Fire A.wav-17c72e93915208f014fe6e4130db5406.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

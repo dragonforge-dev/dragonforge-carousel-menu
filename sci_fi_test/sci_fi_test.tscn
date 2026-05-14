@@ -1,0 +1,300 @@
+[gd_scene format=3 uid="uid://bihklxyuui7vj"]
+
+[ext_resource type="Shader" uid="uid://byndinykwiyw3" path="res://assets/sci_fi/shaders/starfield.gdshader" id="1_shf4y"]
+[ext_resource type="Texture2D" uid="uid://djemgbmitqbau" path="res://assets/sci_fi/textures/ui/sci_fi/message dialog2.png" id="2_nusxu"]
+[ext_resource type="Script" uid="uid://3rerxsv0cpoh" path="res://addons/dragonforge_carousel_menu/carousel_menu.gd" id="2_vv8ki"]
+[ext_resource type="Texture2D" uid="uid://dydp8xe1rssfv" path="res://assets/sci_fi/textures/ui/sci_fi/btn2-normal.png" id="3_x7q1p"]
+[ext_resource type="Texture2D" uid="uid://cnd74e3thl6tk" path="res://assets/sci_fi/textures/ui/sci_fi/btn2-hovered.png" id="4_2xyqh"]
+[ext_resource type="Texture2D" uid="uid://dbh8rv1wf02ix" path="res://assets/sci_fi/textures/ui/sci_fi/btn2-disabled.png" id="5_nusxu"]
+[ext_resource type="FontFile" uid="uid://fwl4nodrw2k5" path="res://assets/sci_fi/fonts/Kenney Future.ttf" id="6_g1ywe"]
+[ext_resource type="Texture2D" uid="uid://bh3q570nvdq21" path="res://assets/sci_fi/textures/ui/sci_fi/bg item.png" id="7_2xyqh"]
+[ext_resource type="Script" uid="uid://br84oj0f8rqn3" path="res://sci_fi_test/test_texture_button.gd" id="7_wlaut"]
+[ext_resource type="Script" uid="uid://dn12qvjbqoby" path="res://test/load_scene_button.gd" id="9_31hcq"]
+[ext_resource type="AudioStream" uid="uid://bw4gm0gy4sydl" path="res://assets/sci_fi/sound/sfx/sci_fi/Update Flashlight A.wav" id="9_nnwge"]
+[ext_resource type="Script" uid="uid://dq8j4ec68vxgn" path="res://sci_fi_test/panel_container.gd" id="10_gmfsc"]
+[ext_resource type="AudioStream" uid="uid://cme10pbq2rbdr" path="res://assets/sci_fi/sound/music/17. The Long Jump (Loop).ogg" id="11_7cqma"]
+[ext_resource type="Script" uid="uid://pdqpb631fguq" path="res://character_selection_test/rotate_audio_stream_player.gd" id="12_kc21c"]
+[ext_resource type="AudioStream" uid="uid://rd7o30pq04a0" path="res://assets/sci_fi/sound/sfx/sci_fi/Update Flashlight B.wav" id="14_y0u5r"]
+[ext_resource type="AudioStream" uid="uid://ckekpdo7i243s" path="res://assets/sci_fi/sound/sfx/sci_fi/Signal Positive JRPG A.wav" id="15_8ou58"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aawhq"]
+shader = ExtResource("1_shf4y")
+shader_parameter/anim_speed = -0.7499997981249997
+shader_parameter/star_brightness = 0.0250000011875
+shader_parameter/dust = 0.1830000086925
+shader_parameter/dist_fade = 0.35
+shader_parameter/pixelation = 1000.0
+shader_parameter/quantization_levels = 256
+shader_parameter/dust_color = Color(0.128, 0, 2.082, 1)
+shader_parameter/saturation = 1.0
+shader_parameter/layers = 7.0
+shader_parameter/iterations = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_nnwge"]
+font = ExtResource("6_g1ywe")
+font_size = 32
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g1ywe"]
+texture = ExtResource("2_nusxu")
+texture_margin_left = 20.0
+texture_margin_top = 5.0
+texture_margin_right = 10.0
+texture_margin_bottom = 30.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_7cqma"]
+font = ExtResource("6_g1ywe")
+font_size = 64
+
+[node name="SciFiTest" type="Control" unique_id=1107705296]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1024117496]
+material = SubResource("ShaderMaterial_aawhq")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=134757375]
+custom_minimum_size = Vector2(160, 80)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -60.0
+offset_right = 80.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_2xyqh")
+expand_mode = 1
+
+[node name="CarouselMenu" type="Control" parent="." unique_id=3843289]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_vv8ki")
+radius = Vector2(360, -120)
+front_scale = 0.7
+back_scale = 0.3
+metadata/_custom_type_script = "uid://3rerxsv0cpoh"
+
+[node name="PlayButton" type="TextureButton" parent="CarouselMenu" unique_id=556390378]
+z_index = 100
+layout_mode = 0
+offset_left = 257.0
+offset_top = 398.5
+offset_right = 895.0
+offset_bottom = 489.5
+scale = Vector2(0.7, 0.7)
+pivot_offset = Vector2(319, 45.5)
+focus_mode = 0
+texture_normal = ExtResource("3_x7q1p")
+texture_hover = ExtResource("4_2xyqh")
+texture_disabled = ExtResource("5_nusxu")
+texture_focused = ExtResource("4_2xyqh")
+script = ExtResource("7_wlaut")
+
+[node name="Label" type="Label" parent="CarouselMenu/PlayButton" unique_id=1980370856]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_nnwge")
+
+[node name="OptionsButton" type="TextureButton" parent="CarouselMenu" unique_id=74929598]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = 599.3804
+offset_top = 315.58203
+offset_right = 1237.3804
+offset_bottom = 406.58203
+rotation = -0.13279255
+scale = Vector2(0.5618034, 0.5618034)
+pivot_offset = Vector2(319, 45.5)
+focus_mode = 0
+disabled = true
+texture_normal = ExtResource("3_x7q1p")
+texture_hover = ExtResource("4_2xyqh")
+texture_disabled = ExtResource("5_nusxu")
+texture_focused = ExtResource("4_2xyqh")
+script = ExtResource("7_wlaut")
+
+[node name="Label" type="Label" parent="CarouselMenu/OptionsButton" unique_id=168759356]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Options"
+label_settings = SubResource("LabelSettings_nnwge")
+
+[node name="ExtrasButton" type="TextureButton" parent="CarouselMenu" unique_id=1895381168]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 468.60266
+offset_top = 181.41797
+offset_right = 1106.6027
+offset_bottom = 272.41797
+rotation = -0.082070306
+scale = Vector2(0.3381966, 0.3381966)
+pivot_offset = Vector2(319, 45.5)
+focus_mode = 0
+disabled = true
+texture_normal = ExtResource("3_x7q1p")
+texture_hover = ExtResource("4_2xyqh")
+texture_disabled = ExtResource("5_nusxu")
+texture_focused = ExtResource("4_2xyqh")
+script = ExtResource("7_wlaut")
+
+[node name="Label" type="Label" parent="CarouselMenu/ExtrasButton" unique_id=1103426356]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Extras"
+label_settings = SubResource("LabelSettings_nnwge")
+
+[node name="CreditsButton" type="TextureButton" parent="CarouselMenu" unique_id=1906343078]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 45.39731
+offset_top = 181.41797
+offset_right = 683.39734
+offset_bottom = 272.41797
+rotation = 0.082070306
+scale = Vector2(0.3381966, 0.3381966)
+pivot_offset = Vector2(319, 45.5)
+focus_mode = 0
+disabled = true
+texture_normal = ExtResource("3_x7q1p")
+texture_hover = ExtResource("4_2xyqh")
+texture_disabled = ExtResource("5_nusxu")
+texture_focused = ExtResource("4_2xyqh")
+script = ExtResource("7_wlaut")
+
+[node name="Label" type="Label" parent="CarouselMenu/CreditsButton" unique_id=1018848560]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_nnwge")
+
+[node name="QuitButton" type="TextureButton" parent="CarouselMenu" unique_id=405694755]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = -85.38034
+offset_top = 315.58203
+offset_right = 552.6196
+offset_bottom = 406.58203
+rotation = 0.13279255
+scale = Vector2(0.5618034, 0.5618034)
+pivot_offset = Vector2(319, 45.5)
+focus_mode = 0
+disabled = true
+texture_normal = ExtResource("3_x7q1p")
+texture_hover = ExtResource("4_2xyqh")
+texture_disabled = ExtResource("5_nusxu")
+texture_focused = ExtResource("4_2xyqh")
+script = ExtResource("9_31hcq")
+scene_to_load = "res://test/test.tscn"
+
+[node name="Label" type="Label" parent="CarouselMenu/QuitButton" unique_id=1746794609]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_nnwge")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1790888509]
+custom_minimum_size = Vector2(0, 137)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 40
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=543364007]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_g1ywe")
+script = ExtResource("10_gmfsc")
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer" unique_id=700967162]
+layout_mode = 2
+text = "Sci-Fi Game"
+label_settings = SubResource("LabelSettings_7cqma")
+
+[node name="RotateAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1767975074]
+script = ExtResource("12_kc21c")
+spin_right_sound = ExtResource("9_nnwge")
+spin_left_sound = ExtResource("14_y0u5r")
+select_sound = ExtResource("15_8ou58")
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=690258443]
+stream = ExtResource("11_7cqma")
+volume_db = -6.386
+autoplay = true

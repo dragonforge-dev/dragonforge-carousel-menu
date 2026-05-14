@@ -1,0 +1,288 @@
+[gd_scene format=3 uid="uid://c0bukpnsbhe4x"]
+
+[ext_resource type="Script" uid="uid://3rerxsv0cpoh" path="res://addons/dragonforge_carousel_menu/carousel_menu.gd" id="1_pwy7g"]
+[ext_resource type="Texture2D" uid="uid://c6uqayxb3l7l" path="res://assets/credits/textures/logos/base_purple.jpg" id="1_q2sdj"]
+[ext_resource type="Texture2D" uid="uid://nqwyc30mb6ks" path="res://assets/credits/textures/logos/craftpix_logo.svg" id="2_coo38"]
+[ext_resource type="FontFile" uid="uid://deahcsq3mckoe" path="res://assets/credits/fonts/american_captain/American Captain.ttf" id="3_nuu62"]
+[ext_resource type="Texture2D" uid="uid://dpsqql4yvmv4y" path="res://assets/credits/textures/logos/kenney_logo_2.png" id="4_coo38"]
+[ext_resource type="Texture2D" uid="uid://ce2rqbxnlvwwn" path="res://assets/credits/textures/logos/ovani_sound_logo.png" id="5_nuu62"]
+[ext_resource type="Texture2D" uid="uid://5cbsqdvid536" path="res://assets/credits/textures/logos/gamedev_marketplace.png" id="6_fa02w"]
+[ext_resource type="FontFile" uid="uid://fwl4nodrw2k5" path="res://assets/sci_fi/fonts/Kenney Future.ttf" id="7_ckpvk"]
+[ext_resource type="Texture2D" uid="uid://bvg42u6qdgq0i" path="res://assets/credits/textures/ui/go-left.png" id="8_eg74q"]
+[ext_resource type="Script" uid="uid://e7am5rqm8gme" path="res://character_selection_test/back_button.gd" id="9_5xy4f"]
+[ext_resource type="AudioStream" uid="uid://cvtjj1vl7aogo" path="res://assets/credits/sound/sfx/Harp Signal Calm A.wav" id="11_s4t3m"]
+[ext_resource type="Script" uid="uid://pdqpb631fguq" path="res://character_selection_test/rotate_audio_stream_player.gd" id="12_ev6mw"]
+[ext_resource type="AudioStream" uid="uid://dq3lymupnktat" path="res://assets/credits/sound/sfx/Update Bubbles 001.wav" id="13_s4t3m"]
+[ext_resource type="AudioStream" uid="uid://c6oyp3lannh1a" path="res://assets/credits/sound/sfx/Update Bubbles 002.wav" id="14_sqtbv"]
+[ext_resource type="AudioStream" uid="uid://dykei1npwu5on" path="res://assets/credits/sound/sfx/Task Decline Clarinet 001.wav" id="15_cycim"]
+[ext_resource type="AudioStream" uid="uid://n358emcerhie" path="res://assets/credits/sound/music/80s Odyssey Main.wav" id="15_e6te8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q2sdj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_coo38"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nuu62"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fa02w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckpvk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q2sdj"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 5.0
+expand_margin_top = 5.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_fa02w"]
+font = ExtResource("3_nuu62")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ckpvk"]
+font = ExtResource("3_nuu62")
+font_size = 24
+font_color = Color(0.6784314, 0.70980394, 0.7921569, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pwy7g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lxrq"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trrm5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_66vpc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xfxmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ev6mw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4t3m"]
+
+[node name="Credits" type="Control" unique_id=1788317289]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1747202719]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_q2sdj")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CarouselMenu" type="Control" parent="." unique_id=1237879066]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pwy7g")
+radius = Vector2(300, -200)
+center_offset = Vector2(-50, -100)
+front_scale = 1.0
+back_scale = 0.35
+animation_speed = null
+metadata/_custom_type_script = "uid://3rerxsv0cpoh"
+
+[node name="CraftPix" type="Button" parent="CarouselMenu" unique_id=1538196334]
+z_index = 100
+layout_mode = 0
+offset_left = 522.0
+offset_top = 420.0
+offset_right = 530.0
+offset_bottom = 428.0
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_q2sdj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_coo38")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nuu62")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fa02w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckpvk")
+
+[node name="PanelContainer" type="PanelContainer" parent="CarouselMenu/CraftPix" unique_id=468334617]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q2sdj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CarouselMenu/CraftPix/PanelContainer" unique_id=1748354956]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CarouselMenu/CraftPix/PanelContainer/HBoxContainer" unique_id=622460899]
+layout_mode = 2
+texture = ExtResource("2_coo38")
+expand_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CarouselMenu/CraftPix/PanelContainer/HBoxContainer" unique_id=730765346]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Label2" type="Label" parent="CarouselMenu/CraftPix/PanelContainer/HBoxContainer/VBoxContainer" unique_id=353268037]
+layout_mode = 2
+text = "CraftPix.Net"
+label_settings = SubResource("LabelSettings_fa02w")
+vertical_alignment = 2
+
+[node name="Label" type="Label" parent="CarouselMenu/CraftPix/PanelContainer/HBoxContainer/VBoxContainer" unique_id=595026107]
+layout_mode = 2
+text = "Free and Premium Game Assets"
+label_settings = SubResource("LabelSettings_ckpvk")
+
+[node name="Kenney" type="Button" parent="CarouselMenu" unique_id=854073663]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = 807.31696
+offset_top = 281.8034
+offset_right = 815.31696
+offset_bottom = 289.8034
+rotation = -0.13279255
+scale = Vector2(0.7754305, 0.7754305)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pwy7g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_coo38")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nuu62")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fa02w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckpvk")
+disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CarouselMenu/Kenney" unique_id=971843234]
+layout_mode = 0
+offset_right = 197.14285
+offset_bottom = 92.0
+texture = ExtResource("4_coo38")
+
+[node name="Ovani" type="Button" parent="CarouselMenu" unique_id=165307223]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 698.3356
+offset_top = 58.196594
+offset_right = 706.3356
+offset_bottom = 66.196594
+rotation = -0.082070306
+scale = Vector2(0.41206947, 0.41206947)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pwy7g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_coo38")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nuu62")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fa02w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckpvk")
+disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CarouselMenu/Ovani" unique_id=1054420082]
+layout_mode = 0
+offset_right = 197.14285
+offset_bottom = 92.0
+texture = ExtResource("5_nuu62")
+
+[node name="GameDevMarket" type="Button" parent="CarouselMenu" unique_id=1157500697]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 345.66443
+offset_top = 58.196594
+offset_right = 353.66443
+offset_bottom = 66.196594
+rotation = 0.082070306
+scale = Vector2(0.41206947, 0.41206947)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pwy7g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_coo38")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nuu62")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fa02w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ckpvk")
+disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CarouselMenu/GameDevMarket" unique_id=1739070123]
+layout_mode = 0
+offset_right = 197.14285
+offset_bottom = 92.0
+texture = ExtResource("6_fa02w")
+
+[node name="Alkakrab" type="Button" parent="CarouselMenu" unique_id=1629779810]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 1
+offset_left = 75.683044
+offset_top = 253.8034
+offset_right = 405.68304
+offset_bottom = 317.8034
+rotation = 0.13279255
+scale = Vector2(0.7754305, 0.7754305)
+pivot_offset = Vector2(165, 32)
+focus_mode = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.5019608)
+theme_override_fonts/font = ExtResource("7_ckpvk")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_1lxrq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1lxrq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1lxrq")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1lxrq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1lxrq")
+disabled = true
+text = "alkakrab"
+
+[node name="BackButton" type="Button" parent="." unique_id=482362543]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_trrm5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_66vpc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xfxmk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ev6mw")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s4t3m")
+icon = ExtResource("8_eg74q")
+script = ExtResource("9_5xy4f")
+scene_to_load = "res://test/test.tscn"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton" unique_id=1819983552]
+stream = ExtResource("11_s4t3m")
+
+[node name="RotateAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1979898488]
+volume_db = -10.0
+script = ExtResource("12_ev6mw")
+spin_right_sound = ExtResource("13_s4t3m")
+spin_left_sound = ExtResource("14_sqtbv")
+select_sound = ExtResource("15_cycim")
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1081834377]
+stream = ExtResource("15_e6te8")
+volume_db = -10.0
+autoplay = true

@@ -1,0 +1,1006 @@
+[gd_scene format=3 uid="uid://h087p8f4yv08"]
+
+[ext_resource type="Texture2D" uid="uid://bahbpqcrksr8" path="res://assets/character_selection/textures/background/battleground.png" id="1_m72va"]
+[ext_resource type="Script" uid="uid://3rerxsv0cpoh" path="res://addons/dragonforge_carousel_menu/carousel_menu.gd" id="1_nh28a"]
+[ext_resource type="Texture2D" uid="uid://dukphi085omwp" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_000.png" id="2_iyech"]
+[ext_resource type="Texture2D" uid="uid://bp0r187ba7cjq" path="res://assets/character_selection/textures/background/back_land.png" id="2_sg6o5"]
+[ext_resource type="Texture2D" uid="uid://by3w046plggos" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_001.png" id="3_e8eko"]
+[ext_resource type="Texture2D" uid="uid://4ketlhahxvqu" path="res://assets/character_selection/textures/background/back_decor.png" id="3_edchp"]
+[ext_resource type="Texture2D" uid="uid://dthb6xu6cim47" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_002.png" id="4_677dj"]
+[ext_resource type="Texture2D" uid="uid://dsh0eglgjf631" path="res://assets/character_selection/textures/background/ground_decor.png" id="4_s1bjq"]
+[ext_resource type="Texture2D" uid="uid://brlcldj0pwkqo" path="res://assets/character_selection/textures/background/front_decor.png" id="5_iuedp"]
+[ext_resource type="Texture2D" uid="uid://dtd50134b0orp" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_003.png" id="5_syevl"]
+[ext_resource type="Texture2D" uid="uid://csppge1giqb3w" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_004.png" id="6_i2at4"]
+[ext_resource type="Script" uid="uid://bv7h3igb5fc50" path="res://character_selection_test/character_select_button.gd" id="7_t85qg"]
+[ext_resource type="Texture2D" uid="uid://csm7myke8ld4t" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_005.png" id="7_x7bbf"]
+[ext_resource type="Texture2D" uid="uid://d0w55ehgd5qgf" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_006.png" id="8_v5xor"]
+[ext_resource type="Texture2D" uid="uid://cjn5frpwl6wuv" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_007.png" id="9_y71iy"]
+[ext_resource type="Texture2D" uid="uid://di6b7itbtklpw" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_008.png" id="10_7gvxp"]
+[ext_resource type="Texture2D" uid="uid://cd7hh7mree3ng" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_009.png" id="11_q4103"]
+[ext_resource type="Texture2D" uid="uid://dlfj0804dy2vh" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_010.png" id="12_208og"]
+[ext_resource type="Texture2D" uid="uid://cp8r6i1e2bun7" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_011.png" id="13_avu36"]
+[ext_resource type="Texture2D" uid="uid://dyqk6grygw0b8" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_012.png" id="14_t1to1"]
+[ext_resource type="Texture2D" uid="uid://dwjvmyk0g50tv" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_013.png" id="15_60dwd"]
+[ext_resource type="Texture2D" uid="uid://cdi78wh1svwri" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_014.png" id="16_tn5ti"]
+[ext_resource type="Texture2D" uid="uid://clx7ttkpr4tm" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_015.png" id="17_iw7l5"]
+[ext_resource type="Texture2D" uid="uid://rlbognxi5s0c" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_016.png" id="18_qo5ec"]
+[ext_resource type="Texture2D" uid="uid://b6vx413be2nll" path="res://assets/character_selection/textures/characters/valkyrie_1/Idle Blinking/0_Valkyrie_Idle Blinking_017.png" id="19_8o4ws"]
+[ext_resource type="Texture2D" uid="uid://b8bw4t453cpwp" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_000.png" id="20_8o4ws"]
+[ext_resource type="Texture2D" uid="uid://bqk2ndrf1ry7d" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_001.png" id="21_88h74"]
+[ext_resource type="Texture2D" uid="uid://c2yth3qg6na3m" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_002.png" id="22_vkc26"]
+[ext_resource type="Texture2D" uid="uid://dklo2qutox86q" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_003.png" id="23_o1gby"]
+[ext_resource type="Texture2D" uid="uid://1cudrnsd2hx3" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_004.png" id="24_q4uta"]
+[ext_resource type="Texture2D" uid="uid://6tqet0nt5t16" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_000.png" id="25_6n76l"]
+[ext_resource type="Texture2D" uid="uid://ci1iqodidb3vf" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_005.png" id="25_b4prn"]
+[ext_resource type="Texture2D" uid="uid://cwesrta5n8kev" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_006.png" id="26_72n7f"]
+[ext_resource type="Texture2D" uid="uid://dx8j4lvknof1i" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_001.png" id="26_t85qg"]
+[ext_resource type="Texture2D" uid="uid://vetqmbfuib7f" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_007.png" id="27_llijy"]
+[ext_resource type="Texture2D" uid="uid://b6igdv4wicvb" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_002.png" id="27_sv5y1"]
+[ext_resource type="Texture2D" uid="uid://bv05xqyxmks6x" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_003.png" id="28_hbo5x"]
+[ext_resource type="Texture2D" uid="uid://8wrdhemf2wqo" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_008.png" id="28_mahsn"]
+[ext_resource type="Texture2D" uid="uid://d3jn2x1ibukv" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_004.png" id="29_7uatq"]
+[ext_resource type="Texture2D" uid="uid://dvder7fd4dsy0" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_009.png" id="29_v5km7"]
+[ext_resource type="Texture2D" uid="uid://dbb8f307cstny" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_010.png" id="30_bapty"]
+[ext_resource type="Texture2D" uid="uid://ddtwlyj2g1hbi" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_005.png" id="30_q5n0f"]
+[ext_resource type="Texture2D" uid="uid://dsae54qrsndom" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_006.png" id="31_epltd"]
+[ext_resource type="Texture2D" uid="uid://bqfuwi6cx13gn" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_011.png" id="31_xgs7r"]
+[ext_resource type="Texture2D" uid="uid://d38xu0bihmod6" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_012.png" id="32_cokea"]
+[ext_resource type="Texture2D" uid="uid://denhrs0sxrgc8" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_007.png" id="32_rxr0f"]
+[ext_resource type="Texture2D" uid="uid://bettbwoek8pio" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_013.png" id="33_66eof"]
+[ext_resource type="Texture2D" uid="uid://1xrcb5bm721r" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_008.png" id="33_ajd2p"]
+[ext_resource type="Texture2D" uid="uid://u81l3yk4tfyy" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_014.png" id="34_q67j2"]
+[ext_resource type="Texture2D" uid="uid://x7m0kq1mkjha" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_009.png" id="34_swb52"]
+[ext_resource type="Texture2D" uid="uid://b7scb6rh2p4yr" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_015.png" id="35_cr4g4"]
+[ext_resource type="Texture2D" uid="uid://ml8lbx38v6g3" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_010.png" id="35_ts7pi"]
+[ext_resource type="Texture2D" uid="uid://c6fs756yutjgr" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_016.png" id="36_8fm6e"]
+[ext_resource type="Texture2D" uid="uid://b8xfwpr1sv6t7" path="res://assets/character_selection/textures/characters/valkyrie_1/Slashing/0_Valkyrie_Slashing_011.png" id="36_sp2fk"]
+[ext_resource type="Texture2D" uid="uid://clo5oqxgigoqd" path="res://assets/character_selection/textures/characters/ranger_1/Idle Blinking/0_Forest_Ranger_Idle Blinking_017.png" id="37_rf32q"]
+[ext_resource type="Texture2D" uid="uid://7kllegl2lw7e" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_000.png" id="38_db8he"]
+[ext_resource type="Texture2D" uid="uid://0buc2iuuy3l0" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_001.png" id="39_oj0pf"]
+[ext_resource type="AudioStream" uid="uid://boc7t337ok7c6" path="res://assets/character_selection/sound/sfx/Bow Arrow Draw C.wav" id="39_vs5wj"]
+[ext_resource type="Texture2D" uid="uid://dhlak4hy1hr46" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_002.png" id="40_3d23l"]
+[ext_resource type="AudioStream" uid="uid://dieao5nbjj122" path="res://assets/character_selection/sound/sfx/Bow Arrow Fire A.wav" id="40_dyi2u"]
+[ext_resource type="Texture2D" uid="uid://ch7153iywllq8" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_003.png" id="41_xcfqi"]
+[ext_resource type="Texture2D" uid="uid://dimrwict582p1" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_004.png" id="42_uk34m"]
+[ext_resource type="Texture2D" uid="uid://dj30lc4tmp43h" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_005.png" id="43_uf3sp"]
+[ext_resource type="Texture2D" uid="uid://b1qy81hx01g8y" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_006.png" id="44_6axdb"]
+[ext_resource type="Texture2D" uid="uid://cqs8slk3lovae" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_007.png" id="45_0d7nw"]
+[ext_resource type="Texture2D" uid="uid://c8ptj75irkw7" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_008.png" id="46_spec4"]
+[ext_resource type="Texture2D" uid="uid://b7dmmndrv5ys4" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_009.png" id="47_me8y2"]
+[ext_resource type="Texture2D" uid="uid://c77v45bnusj3q" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_010.png" id="48_6o6u1"]
+[ext_resource type="Texture2D" uid="uid://bahlye8is1b51" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_011.png" id="49_aie42"]
+[ext_resource type="Texture2D" uid="uid://jgkib7hyikyx" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_012.png" id="50_b44hi"]
+[ext_resource type="Texture2D" uid="uid://78ow5lwby1qp" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_013.png" id="51_sq5lo"]
+[ext_resource type="Texture2D" uid="uid://3lnvp3f0aq7n" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_014.png" id="52_5gla5"]
+[ext_resource type="Texture2D" uid="uid://bwallo3s1o77p" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_015.png" id="53_s42pw"]
+[ext_resource type="Texture2D" uid="uid://clbfrpp3u5i55" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_016.png" id="54_wbui8"]
+[ext_resource type="Texture2D" uid="uid://bk7ixa1yb4t71" path="res://assets/character_selection/textures/characters/alchemist_3/Idle Blinking/0_Bloody_Alchemist_Idle Blinking_017.png" id="55_jx4ot"]
+[ext_resource type="Texture2D" uid="uid://cr6uhcc3umqia" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_000.png" id="56_ts7pi"]
+[ext_resource type="Texture2D" uid="uid://bv2efd46yd523" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_000.png" id="56_yinm8"]
+[ext_resource type="Texture2D" uid="uid://c70qkx2ylb6tl" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_001.png" id="57_e00mo"]
+[ext_resource type="Texture2D" uid="uid://b7ea5wtt44e55" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_001.png" id="57_sp2fk"]
+[ext_resource type="Texture2D" uid="uid://boab7ymayuxn3" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_002.png" id="58_hw5rq"]
+[ext_resource type="Texture2D" uid="uid://cgsw20833lwm3" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_002.png" id="58_vs5wj"]
+[ext_resource type="Texture2D" uid="uid://c77yyf74uyxoh" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_003.png" id="59_0n6m1"]
+[ext_resource type="Texture2D" uid="uid://cqugh7gu4k0m1" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_003.png" id="59_dyi2u"]
+[ext_resource type="Texture2D" uid="uid://ckw7eb25v2ias" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_004.png" id="60_3sywl"]
+[ext_resource type="Texture2D" uid="uid://ewgmwaxnjn04" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_004.png" id="60_oyrfu"]
+[ext_resource type="Texture2D" uid="uid://b86drgpjxrjkt" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_005.png" id="61_3xj3x"]
+[ext_resource type="Texture2D" uid="uid://bfq3t8u0fegmb" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_005.png" id="61_upl3n"]
+[ext_resource type="Texture2D" uid="uid://cgitf30n73rgr" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_006.png" id="62_cffn1"]
+[ext_resource type="Texture2D" uid="uid://e1bvxcs4cy8m" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_006.png" id="62_k5ngf"]
+[ext_resource type="Texture2D" uid="uid://dths5fftvgclq" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_007.png" id="63_vxy2o"]
+[ext_resource type="Texture2D" uid="uid://djvfdsf2v5svt" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_007.png" id="63_wq482"]
+[ext_resource type="Texture2D" uid="uid://f6txi3u75wq3" path="res://assets/character_selection/textures/characters/ranger_1/Shooting/0_Forest_Ranger_Shooting_008.png" id="64_6qfal"]
+[ext_resource type="Texture2D" uid="uid://ch1clr8xrjlyv" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_008.png" id="64_aqs7t"]
+[ext_resource type="Texture2D" uid="uid://b4hj4x4kteu0n" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_009.png" id="65_iuf1h"]
+[ext_resource type="Texture2D" uid="uid://b6o7ca8g4608u" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_010.png" id="66_v2pmk"]
+[ext_resource type="Texture2D" uid="uid://bnpbf28sxk5a4" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_011.png" id="67_4sysm"]
+[ext_resource type="Texture2D" uid="uid://cll2ehwm3y7pc" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_012.png" id="68_0okry"]
+[ext_resource type="AudioStream" uid="uid://begs1uq6wp5g8" path="res://assets/character_selection/sound/sfx/General Throw A.wav" id="68_swc3c"]
+[ext_resource type="AudioStream" uid="uid://sq58lmsicav3" path="res://assets/character_selection/sound/sfx/Pot Fire.wav" id="69_lyqs6"]
+[ext_resource type="Texture2D" uid="uid://bng1u28wruno0" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_013.png" id="69_yeise"]
+[ext_resource type="Texture2D" uid="uid://dd4dgopmteaiv" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_014.png" id="70_78a1j"]
+[ext_resource type="Texture2D" uid="uid://bx55maf0y1v3h" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_015.png" id="71_qqjni"]
+[ext_resource type="Texture2D" uid="uid://cl8034o0g7m4r" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_016.png" id="72_txcaq"]
+[ext_resource type="Texture2D" uid="uid://dmwdqe5oo87op" path="res://assets/character_selection/textures/characters/orc/Idle Blinking/0_Orc_Idle Blinking_017.png" id="73_fvcwb"]
+[ext_resource type="Texture2D" uid="uid://v3spu6qhjigw" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_000.png" id="74_no7aq"]
+[ext_resource type="Texture2D" uid="uid://cvlo3vee1fv6u" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_001.png" id="75_gtivd"]
+[ext_resource type="Texture2D" uid="uid://b4kj6i86adchu" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_002.png" id="76_ksi7t"]
+[ext_resource type="Texture2D" uid="uid://ni103wtlmm6x" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_003.png" id="77_het3t"]
+[ext_resource type="Texture2D" uid="uid://dshlxxg1ohfir" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_004.png" id="78_vtbge"]
+[ext_resource type="Texture2D" uid="uid://dwuohl0xnwsil" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_005.png" id="79_m72va"]
+[ext_resource type="Texture2D" uid="uid://bw3esq75e8oaw" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_006.png" id="80_sg6o5"]
+[ext_resource type="Texture2D" uid="uid://b7ydqdvs0wi5f" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_007.png" id="81_edchp"]
+[ext_resource type="Texture2D" uid="uid://cgd54lplt1xq0" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_008.png" id="82_s1bjq"]
+[ext_resource type="Texture2D" uid="uid://cd7akrlytwdvs" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_009.png" id="83_iuedp"]
+[ext_resource type="Texture2D" uid="uid://brarmkk5i2kq3" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_010.png" id="84_uoo40"]
+[ext_resource type="Texture2D" uid="uid://drybf35rmmmu2" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_011.png" id="85_t2itx"]
+[ext_resource type="Texture2D" uid="uid://cv2p0mi10qaqh" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_012.png" id="86_hhhns"]
+[ext_resource type="Texture2D" uid="uid://bacgo1wnpkloo" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_013.png" id="87_t3pf4"]
+[ext_resource type="Texture2D" uid="uid://cf2rlelrl1023" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_014.png" id="88_dup2y"]
+[ext_resource type="Texture2D" uid="uid://c64nav7ckoey0" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_000.png" id="88_ooymg"]
+[ext_resource type="Texture2D" uid="uid://dkj22nx317min" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_001.png" id="89_4y7hn"]
+[ext_resource type="Texture2D" uid="uid://cjgunlrm60tcj" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_015.png" id="89_ujjx3"]
+[ext_resource type="Texture2D" uid="uid://b58l5v4fnkea1" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_002.png" id="90_75nft"]
+[ext_resource type="Texture2D" uid="uid://cfah1oggmkwtg" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_016.png" id="90_mbkk0"]
+[ext_resource type="Texture2D" uid="uid://c1uq8yt51mm2o" path="res://assets/character_selection/textures/characters/golem_1/Idle Blinking/0_Golem_Idle Blinking_017.png" id="91_e3dvk"]
+[ext_resource type="Texture2D" uid="uid://bbjucboaagojo" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_003.png" id="91_vnewj"]
+[ext_resource type="Texture2D" uid="uid://rep86wa5811e" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_004.png" id="92_y2wp4"]
+[ext_resource type="Texture2D" uid="uid://dqq5w3hl4hqvr" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_005.png" id="93_4y6f1"]
+[ext_resource type="Texture2D" uid="uid://d3nviq6vaqmnq" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_006.png" id="94_olj60"]
+[ext_resource type="Texture2D" uid="uid://crwbqr1dvcrgd" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_007.png" id="95_r3bvv"]
+[ext_resource type="Texture2D" uid="uid://dnnvhqg4vr27y" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_008.png" id="96_rsj1g"]
+[ext_resource type="Texture2D" uid="uid://b3h25jjygj3od" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_009.png" id="97_4oo2i"]
+[ext_resource type="Texture2D" uid="uid://ctjvvwq1whj1" path="res://assets/character_selection/textures/ui/2.png" id="97_edchp"]
+[ext_resource type="Texture2D" uid="uid://b11yde22vkysy" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_010.png" id="98_6idy6"]
+[ext_resource type="FontFile" uid="uid://3mggxbs5smcf" path="res://assets/fantasy/fonts/MagicSchoolTwo.ttf" id="98_s1bjq"]
+[ext_resource type="Texture2D" uid="uid://c6ebx4ncpidkg" path="res://assets/character_selection/textures/characters/alchemist_3/Throwing/0_Bloody_Alchemist_Throwing_011.png" id="99_c0lba"]
+[ext_resource type="Script" uid="uid://cvqc3ahi5wek7" path="res://character_selection_test/character_label.gd" id="99_s1bjq"]
+[ext_resource type="AudioStream" uid="uid://s8rxv6cmfuxx" path="res://assets/character_selection/sound/sfx/Orc F.wav" id="100_i8ptq"]
+[ext_resource type="Texture2D" uid="uid://dgue4go5yp700" path="res://assets/character_selection/textures/ui/4.png" id="100_uoo40"]
+[ext_resource type="Script" uid="uid://e7am5rqm8gme" path="res://character_selection_test/back_button.gd" id="101_e3dvk"]
+[ext_resource type="AudioStream" uid="uid://b7n2w76q4r0kj" path="res://assets/character_selection/sound/sfx/Orc Phrase 009.wav" id="101_na4hn"]
+[ext_resource type="AudioStream" uid="uid://cgendjcjdgqn0" path="res://assets/character_selection/sound/sfx/Sweet Back A.wav" id="102_jvd2q"]
+[ext_resource type="Script" uid="uid://pdqpb631fguq" path="res://character_selection_test/rotate_audio_stream_player.gd" id="103_dup2y"]
+[ext_resource type="AudioStream" uid="uid://b8r02u5237yo1" path="res://assets/character_selection/sound/sfx/Blade Swing A.wav" id="104_mbkk0"]
+[ext_resource type="AudioStream" uid="uid://5w0jjdoim7no" path="res://assets/character_selection/sound/sfx/Blade Swing B.wav" id="105_e3dvk"]
+[ext_resource type="AudioStream" uid="uid://c0rxwvj8ibjuu" path="res://assets/character_selection/sound/sfx/Consecrate.wav" id="106_mbkk0"]
+[ext_resource type="AudioStream" uid="uid://lup0fwwpsvsn" path="res://assets/character_selection/sound/music/Heroes Vol2 First Soldier Main.wav" id="107_mbkk0"]
+[ext_resource type="Texture2D" uid="uid://cgusg8mgm5kad" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_000.png" id="120_1x313"]
+[ext_resource type="Texture2D" uid="uid://djsphi0wbcjov" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_001.png" id="121_ei4lu"]
+[ext_resource type="Texture2D" uid="uid://cgibly03kbubk" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_002.png" id="122_dwfyg"]
+[ext_resource type="Texture2D" uid="uid://pfm2bywkckn7" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_003.png" id="123_kntec"]
+[ext_resource type="Texture2D" uid="uid://bcwunryjl0os5" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_004.png" id="124_y7o26"]
+[ext_resource type="Texture2D" uid="uid://dhsee8nt63fv2" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_005.png" id="125_dq8ml"]
+[ext_resource type="Texture2D" uid="uid://cf7u406qab12h" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_006.png" id="126_0b0c5"]
+[ext_resource type="Texture2D" uid="uid://dsybouowj52hf" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_007.png" id="127_lgt80"]
+[ext_resource type="Texture2D" uid="uid://bpoeketnph1lf" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_008.png" id="128_lfhcj"]
+[ext_resource type="Texture2D" uid="uid://bp2be4hqxksxg" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_009.png" id="129_bb6ge"]
+[ext_resource type="Texture2D" uid="uid://bqkltci7gl3i6" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_010.png" id="130_8gkkv"]
+[ext_resource type="Texture2D" uid="uid://bjwdopsb5c0q3" path="res://assets/character_selection/textures/characters/orc/Kicking/0_Orc_Kicking_011.png" id="131_xi30n"]
+[ext_resource type="AudioStream" uid="uid://bvgnx63hvfbh6" path="res://assets/character_selection/sound/sfx/Medium Ice Block Slide A.wav" id="132_pqkmv"]
+[ext_resource type="AudioStream" uid="uid://p0755l51c76b" path="res://assets/character_selection/sound/sfx/Large Stones Impact A.wav" id="133_ahn24"]
+[ext_resource type="Texture2D" uid="uid://biphioomia3ts" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_000.png" id="152_7fxtf"]
+[ext_resource type="Texture2D" uid="uid://djwd3swuhqlmd" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_001.png" id="153_0nfqk"]
+[ext_resource type="Texture2D" uid="uid://rmqkusj04k3u" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_002.png" id="154_nmapg"]
+[ext_resource type="Texture2D" uid="uid://t02mryfo2cwi" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_003.png" id="155_nrekq"]
+[ext_resource type="Texture2D" uid="uid://bedj8mahkgao2" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_004.png" id="156_egn7k"]
+[ext_resource type="Texture2D" uid="uid://y0be4tney4mg" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_005.png" id="157_5iqm2"]
+[ext_resource type="Texture2D" uid="uid://dfv0vmjh5m5ij" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_006.png" id="158_0k6tm"]
+[ext_resource type="Texture2D" uid="uid://cv5mqmybxdkem" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_007.png" id="159_vxvo7"]
+[ext_resource type="Texture2D" uid="uid://bgkthpgsoteo0" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_008.png" id="160_ci10s"]
+[ext_resource type="Texture2D" uid="uid://et35uofxly86" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_009.png" id="161_fxrsg"]
+[ext_resource type="Texture2D" uid="uid://cmohwkn75e7l5" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_010.png" id="162_o0tf0"]
+[ext_resource type="Texture2D" uid="uid://dygdvvkafivjj" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_011.png" id="163_3r88q"]
+[ext_resource type="Texture2D" uid="uid://ct3yacui062r6" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_012.png" id="164_aur0p"]
+[ext_resource type="Texture2D" uid="uid://c20lxgnlcdo5d" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_013.png" id="165_srvlg"]
+[ext_resource type="Texture2D" uid="uid://wedcec6ihi3i" path="res://assets/character_selection/textures/characters/golem_1/Dying/0_Golem_Dying_014.png" id="166_q6fyj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_88h74"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iyech")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e8eko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_677dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_syevl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i2at4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x7bbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v5xor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y71iy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7gvxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_q4103")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_208og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_avu36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_t1to1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_60dwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tn5ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_iw7l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qo5ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8o4ws")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_6n76l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_t85qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sv5y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hbo5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7uatq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q5n0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_epltd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_rxr0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ajd2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_swb52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ts7pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_sp2fk")
+}],
+"loop": false,
+"name": &"selected",
+"speed": 12.0
+}]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_oyrfu"]
+loop = false
+stream_count = 2
+stream_0 = ExtResource("39_vs5wj")
+stream_1 = ExtResource("40_dyi2u")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_db8he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_8o4ws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_88h74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vkc26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_o1gby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q4uta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_b4prn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_72n7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_llijy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mahsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_v5km7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_bapty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_xgs7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_cokea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_66eof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_q67j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_cr4g4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_8fm6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_rf32q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_ts7pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_sp2fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_vs5wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_dyi2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_oyrfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_upl3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_cffn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_wq482")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_6qfal")
+}],
+"loop": false,
+"name": &"selected",
+"speed": 4.5
+}]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_i8ptq"]
+loop = false
+stream_count = 2
+stream_0 = ExtResource("68_swc3c")
+stream_1 = ExtResource("69_lyqs6")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yinm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_db8he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_oj0pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_3d23l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_xcfqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_uk34m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uf3sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_6axdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_0d7nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_spec4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_me8y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_6o6u1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_aie42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_b44hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_sq5lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_5gla5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_s42pw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_wbui8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_jx4ot")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("88_ooymg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_4y7hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_75nft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_vnewj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_y2wp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_4y6f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_olj60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_r3bvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_rsj1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_4oo2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_6idy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_c0lba")
+}],
+"loop": false,
+"name": &"selected",
+"speed": 12.0
+}]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_nyf3q"]
+loop = false
+stream_count = 2
+stream_0 = ExtResource("100_i8ptq")
+stream_1 = ExtResource("101_na4hn")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_no7aq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_yinm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_e00mo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_hw5rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_0n6m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_3sywl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_3xj3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_k5ngf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_vxy2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_aqs7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_iuf1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_v2pmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4sysm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_0okry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_yeise")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_78a1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_qqjni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_txcaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_fvcwb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("120_1x313")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_ei4lu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_dwfyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_kntec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_y7o26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_dq8ml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_0b0c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_lgt80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_lfhcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_bb6ge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_8gkkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_xi30n")
+}],
+"loop": false,
+"name": &"selected",
+"speed": 12.0
+}]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_er2gw"]
+loop = false
+stream_count = 2
+stream_0 = ExtResource("132_pqkmv")
+stream_1 = ExtResource("133_ahn24")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jvd2q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_no7aq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_gtivd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_ksi7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_het3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_vtbge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_m72va")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_sg6o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_edchp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_s1bjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_iuedp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_uoo40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_t2itx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_hhhns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_t3pf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_dup2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_ujjx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_mbkk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_e3dvk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("152_7fxtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_0nfqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_nmapg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_nrekq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_egn7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_5iqm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_0k6tm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_vxvo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_ci10s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_fxrsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_o0tf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_3r88q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_aur0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_srvlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_q6fyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_q6fyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_srvlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_aur0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_3r88q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_o0tf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_fxrsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_ci10s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_vxvo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_0k6tm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_5iqm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_egn7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_nrekq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_nmapg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_0nfqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_7fxtf")
+}],
+"loop": false,
+"name": &"selected",
+"speed": 12.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iuedp"]
+texture = ExtResource("97_edchp")
+texture_margin_left = 20.0
+texture_margin_right = 25.0
+texture_margin_bottom = 15.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_uoo40"]
+font = ExtResource("98_s1bjq")
+font_size = 72
+
+[node name="CharacterSelectionTest" type="Control" unique_id=1229326881]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Control" parent="." unique_id=1057970424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Battleground" type="TextureRect" parent="Background" unique_id=1416068611]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_m72va")
+expand_mode = 1
+
+[node name="BackLand" type="TextureRect" parent="Background" unique_id=65318556]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sg6o5")
+expand_mode = 1
+
+[node name="BackDecor" type="TextureRect" parent="Background" unique_id=1374679074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_edchp")
+expand_mode = 1
+
+[node name="GroundDecor" type="TextureRect" parent="Background" unique_id=899772388]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_s1bjq")
+expand_mode = 1
+
+[node name="FrontDecor" type="TextureRect" parent="Background" unique_id=2008015651]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_iuedp")
+expand_mode = 1
+
+[node name="CarouselMenu" type="Control" parent="." unique_id=1164208204]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nh28a")
+radius = Vector2(420, -40)
+center_offset = Vector2(0, -40)
+metadata/_custom_type_script = "uid://3rerxsv0cpoh"
+
+[node name="Valkyrie" type="Button" parent="CarouselMenu" unique_id=522170755]
+z_index = 100
+layout_mode = 0
+offset_left = 572.0
+offset_top = 320.0
+offset_right = 580.0
+offset_bottom = 328.0
+scale = Vector2(1.35, 1.35)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+script = ExtResource("7_t85qg")
+select_sound = ExtResource("106_mbkk0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CarouselMenu/Valkyrie" unique_id=689494255]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_88h74")
+animation = &"selected"
+autoplay = "default"
+
+[node name="Ranger" type="Button" parent="CarouselMenu" unique_id=1820208083]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = 971.4437
+offset_top = 292.3607
+offset_right = 979.4437
+offset_bottom = 300.3607
+rotation = -0.13279255
+scale = Vector2(1.108156, 1.108156)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+disabled = true
+script = ExtResource("7_t85qg")
+select_sound = SubResource("AudioStreamPlaylist_oyrfu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CarouselMenu/Ranger" unique_id=1911594388]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_db8he")
+animation = &"selected"
+autoplay = "default"
+
+[node name="Alchemist" type="Button" parent="CarouselMenu" unique_id=1456752834]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 818.8698
+offset_top = 247.63931
+offset_right = 826.8698
+offset_bottom = 255.63931
+rotation = -0.082070306
+scale = Vector2(0.716844, 0.716844)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+disabled = true
+script = ExtResource("7_t85qg")
+select_sound = SubResource("AudioStreamPlaylist_i8ptq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CarouselMenu/Alchemist" unique_id=1765899933]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_yinm8")
+animation = &"selected"
+autoplay = "default"
+
+[node name="Orc" type="Button" parent="CarouselMenu" unique_id=1155336814]
+modulate = Color(1, 1, 1, 0.5929712)
+z_index = 9
+layout_mode = 0
+offset_left = 325.1302
+offset_top = 247.63931
+offset_right = 333.1302
+offset_bottom = 255.63931
+rotation = 0.082070306
+scale = Vector2(0.716844, 0.716844)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+disabled = true
+script = ExtResource("7_t85qg")
+select_sound = SubResource("AudioStreamPlaylist_nyf3q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CarouselMenu/Orc" unique_id=1986071337]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_no7aq")
+animation = &"selected"
+autoplay = "default"
+
+[node name="Golem" type="Button" parent="CarouselMenu" unique_id=1122046071]
+modulate = Color(1, 1, 1, 0.8445288)
+z_index = 65
+layout_mode = 0
+offset_left = 172.55627
+offset_top = 292.3607
+offset_right = 180.55627
+offset_bottom = 300.3607
+rotation = 0.13279255
+scale = Vector2(1.108156, 1.108156)
+pivot_offset = Vector2(4, 4)
+focus_mode = 0
+disabled = true
+script = ExtResource("7_t85qg")
+select_sound = SubResource("AudioStreamPlaylist_er2gw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CarouselMenu/Golem" unique_id=1803752255]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_jvd2q")
+animation = &"selected"
+autoplay = "default"
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1207222425]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.5
+offset_top = -122.0
+offset_right = 121.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_iuedp")
+
+[node name="CharacterLabel" type="Label" parent="PanelContainer" unique_id=239334131]
+layout_mode = 2
+text = "Character"
+label_settings = SubResource("LabelSettings_uoo40")
+horizontal_alignment = 1
+script = ExtResource("99_s1bjq")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1449439426]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="Button" type="Button" parent="MarginContainer" unique_id=1540272599]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+icon = ExtResource("100_uoo40")
+expand_icon = true
+script = ExtResource("101_e3dvk")
+scene_to_load = "res://test/test.tscn"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MarginContainer/Button" unique_id=1437657790]
+stream = ExtResource("102_jvd2q")
+
+[node name="RotateAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1849322436]
+script = ExtResource("103_dup2y")
+spin_right_sound = ExtResource("104_mbkk0")
+spin_left_sound = ExtResource("105_e3dvk")
+
+[node name="MusicAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=599952780]
+stream = ExtResource("107_mbkk0")
+volume_db = -14.597
+autoplay = true
