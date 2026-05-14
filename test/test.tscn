@@ -75,8 +75,9 @@ texture_margin_right = 20.0
 texture_margin_bottom = 20.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_kgdm3"]
+line_spacing = -15.0
 font = ExtResource("6_s3n3v")
-font_size = 32
+font_size = 30
 
 [node name="Test" type="Control" unique_id=2053112227]
 layout_mode = 3
@@ -104,7 +105,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_syuel")
-radius = Vector2(280, -120)
+radius = Vector2(280, -130)
 animation_speed = null
 metadata/_custom_type_script = "uid://3rerxsv0cpoh"
 
@@ -254,8 +255,11 @@ offset_right = 109.0
 offset_bottom = 24.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Main Menu"
+text = "Dragonforge
+Carousel
+Menu"
 label_settings = SubResource("LabelSettings_kgdm3")
+horizontal_alignment = 1
 
 [node name="RotateAudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=10744190]
 script = ExtResource("12_kr6cc")

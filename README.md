@@ -4,7 +4,7 @@
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-carousel-menu)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-carousel-menu)
 
 # Dragonforge Carousel Menu <img src="/addons/dragonforge_carousel_menu/assets/textures/icons/green_carousel_horse.svg" width="32" alt="Carousel Menu Icon"/>
-Plugin that adds a **CarouselMenu** node that can be used to create carousel menus.
+A Godot plugin that adds a **CarouselMenu** node that can be used to create carousel menus.
 
 <img src="/assets/docs/example.png" alt="Add Carousel Menu"/>
 
