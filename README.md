@@ -6,6 +6,8 @@
 # Dragonforge Carousel Menu <img src="/addons/dragonforge_carousel_menu/assets/textures/icons/green_carousel_horse.svg" width="32" alt="Carousel Menu Icon"/>
 Plugin that adds a **CarouselMenu** node that can be used to create carousel menus.
 
+<img src="/assets/docs/example.png" alt="Add Carousel Menu"/>
+
 # Version 1.0
 For use with **Godot 4.6.2.stable** and later.
 
@@ -46,6 +48,38 @@ Creates a configurable oval of rotating button nodes. Buttons are manipulated by
 
 ### Public Variables
 - `selected_button: BaseButton` The currently selected button (the one up front) that will be clicked if the user presses ui_accept.
+
+# Examples
+Running the project will run the test project. Each of the menu items on the main screen takes you to a different example project. There are examples of how to hook up an **AudioStreamPlayer** to play sounds to match up to the carousel actions.
+
+Hopefully these pages will give you some ideas of what is possible.
+
+## Test (Main)
+This screen links to the others, and also has aquit button. All of the buttons on this screen are plain **Button** objects. The background is made with a shader.
+<img src="/assets/docs/test_main.png" alt="Add Carousel Menu"/>
+
+## Sci Fi
+This screen uses a shader to create a background that matches the **TextureButtons** for this theme. The header at the top has been animated to bounce a bit. The only functional button on this page is the **Quit** button, which takes you back to the main page.
+<img src="/assets/docs/sci_fi.png" alt="Add Carousel Menu"/>
+
+## Fantasy
+This screen uses a layered background and an **AnimatedNode2D** to create a book in the center. When you change the options, the pages in the book flip. When you select one, the book closes. The only functional button on this page is the **Close** button, which takes you back to the main page.
+<img src="/assets/docs/fantasy.png" alt="Add Carousel Menu"/>
+
+## Fantasy
+This screen uses a layered background and an **AnimatedNode2D** to create a book in the center. When you change the options, the pages in the book flip. When you select one, the book closes. The only functional button on this page is the **Close** button, which takes you back to the main page.
+<img src="/assets/docs/fantasy.png" alt="Add Carousel Menu"/>
+
+## Character Select
+The **CarouselMenu** can also be used for a character select screen. By attaching an **AnimatedSprite2D** to each button, and giving the button an **StyleBoxEmpty**, we can display characters.
+
+Each character has an idle animation that plays, and a different animation and sound when the character is selected. There is a back button in the upper left-hand corner.
+<img src="/assets/docs/character_select.png" alt="Add Carousel Menu"/>
+
+## Credits
+This screen is an avant-garde interactive credits screen. It shows how you can do something like display the logos of all the companies that supplied assets for your game. (Or in this case, plugin.) There is a back button in the upper left-hand corner.
+<img src="/assets/docs/credits.png" alt="Add Carousel Menu"/>
+
 
 #Credit
 This plugin was inspired by this video. It describes how to make a carousel menu. Someone came to the Godot forum asking how to do this, and I decided to watch the video for fun. This plugin simplified the code and made it a single **Node**.

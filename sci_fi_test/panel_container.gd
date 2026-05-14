@@ -2,14 +2,14 @@ extends PanelContainer
 
 var bounce_range: float = 10.0
 var time: float = 1.5
-var min_scale = Vector2.ONE * 0.95
-var max_scale = Vector2.ONE * 1.05
+var min_scale := Vector2.ONE * 0.95
+var max_scale := Vector2.ONE * 1.05
 
 func _ready() -> void:
 	_start_float()
 
 func _start_float() -> void:
-	var tween = create_tween()
+	var tween: Tween = create_tween()
 	tween.set_loops()
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_IN_OUT)
