@@ -66,10 +66,6 @@ This screen uses a shader to create a background that matches the **TextureButto
 This screen uses a layered background and an **AnimatedNode2D** to create a book in the center. When you change the options, the pages in the book flip. When you select one, the book closes. The only functional button on this page is the **Close** button, which takes you back to the main page.
 <img src="/assets/docs/fantasy.png" alt="Add Carousel Menu"/>
 
-## Fantasy
-This screen uses a layered background and an **AnimatedNode2D** to create a book in the center. When you change the options, the pages in the book flip. When you select one, the book closes. The only functional button on this page is the **Close** button, which takes you back to the main page.
-<img src="/assets/docs/fantasy.png" alt="Add Carousel Menu"/>
-
 ## Character Select
 The **CarouselMenu** can also be used for a character select screen. By attaching an **AnimatedSprite2D** to each button, and giving the button an **StyleBoxEmpty**, we can display characters.
 
