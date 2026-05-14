@@ -1,7 +1,7 @@
 [![Static Badge](https://img.shields.io/badge/Godot%20Engine-4.6.2.stable-blue?style=plastic&logo=godotengine)](https://godotengine.org/)
-[![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-curved-terrain-2d?logo=mit)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/blob/main/LICENSE)
-[![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-curved-terrain-2d/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-curved-terrain-2d)
+[![License](https://img.shields.io/github/license/dragonforge-dev/dragonforge-carousel-menu?logo=mit)](https://github.com/dragonforge-dev/dragonforge-carousel-menu/blob/main/LICENSE)
+[![GitHub release badge](https://badgen.net/github/release/dragonforge-dev/dragonforge-carousel-menu/latest)](https://github.com/dragonforge-dev/dragonforge-curved-terrain-2d/releases/latest)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-carousel-menu)](https://img.shields.io/github/languages/code-size/dragonforge-dev/dragonforge-carousel-menu)
 
 # Dragonforge Carousel Menu <img src="/addons/dragonforge_carousel_menu/assets/textures/icons/green_carousel_horse.svg" width="32" alt="Carousel Menu Icon"/>
 Plugin that adds a **CarouselMenu** node that can be used to create carousel menus.
