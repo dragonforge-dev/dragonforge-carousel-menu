@@ -77,6 +77,6 @@ This screen is an avant-garde interactive credits screen. It shows how you can d
 <img src="/assets/docs/credits.png" alt="Add Carousel Menu"/>
 
 
-#Credit
+# Credit
 This plugin was inspired by this video. It describes how to make a carousel menu. Someone came to the Godot forum asking how to do this, and I decided to watch the video for fun. This plugin simplified the code and made it a single **Node**.
 - [Carousel Menus in Godot](https://www.youtube.com/watch?v=6u8sjztWuVg)
